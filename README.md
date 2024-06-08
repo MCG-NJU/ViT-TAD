@@ -5,5 +5,5 @@ Our paper is available in [ViT-TAD](https://arxiv.org/abs/2312.01897)
 [2023.2.27] Our ViT-TAD has been accepted by CVPR2024. The code will be updated soon. <br>
 figs/
 # Overview
-![alt](figs/overview.pdf)
+![fig](figs/overview.png)
 
