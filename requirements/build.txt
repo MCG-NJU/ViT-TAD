@@ -1,0 +1,16 @@
+cython
+numpy
+joblib
+pandas
+matplotlib
+psutil
+tensorboard
+fvcore
+transformers
+timm
+tensorboardX
+einops
+easydict
+av
+decord
+scikit-learn
