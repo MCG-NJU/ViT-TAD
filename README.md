@@ -6,3 +6,33 @@ Our paper is available in [ViT-TAD](https://arxiv.org/abs/2312.01897)
 # Overview
 ![Pipeline](./figs/pipeline.png)
 
+# Environment preparation
+
+**1:  Create environment**
+
+```
+conda env create -f requirements/vittad.yml
+```
+
+**2:  Activate environment**
+
+```
+conda activate vittad
+```
+
+**3:  Install other dependencies**
+
+``` 
+pip install -v -e .
+```
+
+# Data preparation
+
+**1:  Download videos**
+
+For **THUMOS14**, please check [BasicTAD](https://github.com/MCG-NJU/BasicTAD) for downloading videos.
+
+For **ActivityNet-1.3**, please check [TALLFormer](https://github.com/klauscc/TALLFormer) for downloading videos.
+
+**2:  Prepare videos**
+

@@ -95,7 +95,7 @@ def main():
     ## filter results
     if args.dataset == "anet":
         data_infos = data_loader.dataset.data_infos
-        cuhk_data = json.load(open("cuhk-val/cuhk_val_simp_share.json", "r"))
+        cuhk_data = json.load(open("data/annots/anet/cuhk_val_simp_share.json", "r"))
         cuhk_data_score = cuhk_data["results"]
         cuhk_data_action = cuhk_data["class"]
         filtered_results = []
