@@ -3,6 +3,7 @@ Our paper is available in [ViT-TAD](https://arxiv.org/abs/2312.01897)
 # News
 [2024.5.4] The code for THUMOS14 and ActivityNet-1.3 is updated. <br>
 [2023.2.27] Our ViT-TAD has been accepted by CVPR2024. The code will be updated soon. <br>
+
 # Overview
 ![Pipeline](./figs/pipeline.png)
 
@@ -65,18 +66,18 @@ For **THUMOS14**, run the following command to prepare videos in 8FPS
 
  ```
 #training set
-bash extract_thumos_val_videos_in_8fps.sh
+bash preprocess/extract_thumos_val_videos_in_8fps.sh
 #testing set
-bash extract_thumos_test_videos_in_8fps.sh
+bash preprocess/extract_thumos_test_videos_in_8fps.sh
  ```
 
 For **ActivityNet-1.3**, run the following command to extract 768 frames for each video
 
 ```
 #training set
-python extract_anet_frames.py --video_dir ./data/anet/anet_train --output_dir ./data/anet/afsd_anet_768frames/training
+python preprocess/extract_anet_frames.py --video_dir ./data/anet/anet_train --output_dir ./data/anet/afsd_anet_768frames/training
 #testing set
-python extract_anet_frames.py --video_dir ./data/anet/anet_val --output_dir ./data/anet/afsd_anet_768frames/validation
+python preprocess/extract_anet_frames.py --video_dir ./data/anet/anet_val --output_dir ./data/anet/afsd_anet_768frames/validation
 ```
 
 **3:  Prepare pretrained weights**
