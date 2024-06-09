@@ -75,9 +75,9 @@ For **ActivityNet-1.3**, run the following command to extract 768 frames for eac
 
 ```
 #training set
-python preprocess/extract_anet_frames.py --video_dir ./data/anet/anet_train --output_dir ./data/anet/afsd_anet_768frames/training
+python preprocess/extract_anet_frames.py 1 --video_dir ./data/anet/anet_train --output_dir ./data/anet/afsd_anet_768frames/training
 #testing set
-python preprocess/extract_anet_frames.py --video_dir ./data/anet/anet_val --output_dir ./data/anet/afsd_anet_768frames/validation
+python preprocess/extract_anet_frames.py 1 --video_dir ./data/anet/anet_val --output_dir ./data/anet/afsd_anet_768frames/validation
 ```
 
 **3:  Prepare pretrained weights**
